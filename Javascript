@@ -1,0 +1,52 @@
+/*We're creating a magic 8 ball program to tell the future.*/
+
+//We'll set up a username variable. You can enter your name here if you so desire.
+const userName = '';
+
+//If we have a username, then we'll greet by name, otherwise we simply greet.
+userName ? console.log('Hello ' + userName + '!'):
+console.log('Hello!');
+
+//Now create a question variable. You can replace the question with whatever you wish to ask.
+const userQuestion = 'Can I become rich?';
+
+//Show the question via console.log.
+console.log(userQuestion);
+
+//Next we need to generate a random nuber between 0 and 7.
+const randomNumber = Math.floor(Math.random() * 8);
+
+//We'll create an eightBall variable to hold our answer. It has no answer until a bit later, so it starts as an empty string.
+let eightBall = '';
+
+//We'll set up a switch case to determine our answer.
+switch(randomNumber)
+  {
+    case 0:
+      eightBall = 'It is certain';
+      break;
+    case 1:
+      eightBall = 'It is decidedly so';
+      break;
+    case 2:
+      eightBall = 'Reply hazy, try again';
+      break;
+    case 3:
+      eightBall = 'Cannot predict at this time';
+      break;
+    case 4:
+      eightBall = 'Do not count on it';
+      break;
+    case 5:
+      eightBall = 'My sources say no';
+      break;
+    case 6:
+      eightBall = 'Outlook not so good';
+      break;
+    case 7:
+      eightBall = 'Signs point to yes';
+      break;
+  }
+
+//Show our answer via console.log.
+console.log(eightBall);
